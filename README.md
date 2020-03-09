@@ -7,8 +7,12 @@ It scaffold and serve html to help you create a [bl.ock](https://bl.ocks.org), i
 ## Usage
 
 ```sh
-Usage: elm-blockup <command>
+Usage: elm-blockup [options] [command]
+
+Options:
+  -V, --version  output the version number
+  -h, --help     output usage information
 
 Commands:
-  serve    serve current block (default if directory is not empty)
+  serve          Serve the block.
 ```

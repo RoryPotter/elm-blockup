@@ -22,7 +22,11 @@ const serveBlock = () => {
 };
 
 program
-  .version("0.0.1")
+  .name("elm-blockup")
+  .usage("[options] [command]")
+  .version("0.0.1");
+
+program
   .command("serve")
   .description("Serve the block.")
   .action(serveBlock);
