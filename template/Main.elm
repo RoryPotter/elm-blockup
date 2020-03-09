@@ -2,10 +2,10 @@ module Main exposing (main)
 
 import Color
 import Html exposing (Html)
-import TypedSvg exposing (circle, svg, g)
-import TypedSvg.Attributes exposing (cx, cy, fill, r, stroke, strokeWidth, viewBox, transform )
+import TypedSvg exposing (circle, g, svg)
+import TypedSvg.Attributes exposing (cx, cy, fill, r, stroke, strokeWidth, transform, viewBox)
 import TypedSvg.Core exposing (Svg)
-import TypedSvg.Types exposing (Paint(..), px, Transform(..))
+import TypedSvg.Types exposing (Paint(..), Transform(..), px)
 
 
 
@@ -40,10 +40,10 @@ height =
 
 
 
--- MAIN
+-- CHART
 
 
-chart : Svg msgtra
+chart : Svg msg
 chart =
     circle
         [ cx (px 100)
@@ -52,6 +52,10 @@ chart =
         , fill <| Paint Color.blue
         ]
         []
+
+
+
+-- MAIN
 
 
 main : Svg msg
