@@ -4,6 +4,8 @@
 const program = require("commander");
 const chalk = require("chalk");
 const Bundler = require("parcel-bundler");
+const fs = require("fs-extra");
+const path = require("path");
 
 const options = {
   outDir: "./dist", // The out directory to put the build files in, defaults to dist
@@ -21,6 +23,13 @@ const serveBlock = () => {
   bundler.serve();
 };
 
+const createBLock = () => {
+  console.log(chalk.green("Scaffolding a new block... done."));
+
+  // Copy files to destination directory.
+  fs.copySync(path.join(__dirname, "../template"), path.join(process.cwd()));
+};
+
 program
   .name("elm-blockup")
   .usage("[options] [command]")
@@ -30,5 +39,10 @@ program
   .command("serve")
   .description("serve the block")
   .action(serveBlock);
+
+program
+  .command("create")
+  .description("create block")
+  .action(createBLock);
 
 program.parse(process.argv);
