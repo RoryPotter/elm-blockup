@@ -20,5 +20,8 @@
     "parcel-bundler": "^1.12.4",
     "elm-hot": "^1.1.4",
     "node-elm-compiler": "^5.0.4"
+  },
+  "bin": {
+    "elm-blockup": "./src/index.js"
   }
 }

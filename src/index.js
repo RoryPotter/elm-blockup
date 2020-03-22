@@ -28,7 +28,7 @@ program
 
 program
   .command("serve")
-  .description("Serve the block.")
+  .description("serve the block")
   .action(serveBlock);
 
 program.parse(process.argv);
