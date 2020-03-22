@@ -1,7 +1,7 @@
 {
   "name": "elm-blockup",
   "version": "1.0.0",
-  "description": "Blockup but for Elm! A tiny tool to create bl.ocks in Elm.",
+  "description": "bl.ock helper/generator for Elm",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +13,14 @@
   ],
   "author": "Rory Potter",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoryPotter/elm-blockup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RoryPotter/elm-blockup/issues"
+  },
+  "homepage": "https://github.com/RoryPotter/elm-blockup#readme",
   "dependencies": {
     "chalk": "^3.0.0",
     "commander": "^4.1.1",
