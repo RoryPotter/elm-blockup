@@ -14,5 +14,6 @@ Options:
   -h, --help     Output usage information
 
 Commands:
-  serve          Serve the block.
+  serve          serve a block in the current directory
+  create         create a block in the current directory
 ```

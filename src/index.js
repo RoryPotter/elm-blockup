@@ -37,12 +37,12 @@ program
 
 program
   .command("serve")
-  .description("serve the block")
+  .description("serve a block in the current directory")
   .action(serveBlock);
 
 program
   .command("create")
-  .description("create block")
+  .description("create a block in the current directory")
   .action(createBLock);
 
 program.parse(process.argv);
